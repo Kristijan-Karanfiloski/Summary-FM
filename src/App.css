@@ -1,0 +1,16 @@
+.resultSummary {
+    --border-radius: 2rem;
+    --padding: 2.5rem;
+    max-width: 46rem;
+    display: grid;
+}
+
+@media (min-width: 600px) {
+    .resultSummary {
+        grid-template-columns: 1fr 1fr;
+        margin-inline: 1rem;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        box-shadow: .5rem 1rem 3rem hsl(var(--clr-neutral-hsl-700), .2);
+    }
+}

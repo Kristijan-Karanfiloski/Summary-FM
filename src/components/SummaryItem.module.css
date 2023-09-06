@@ -1,0 +1,52 @@
+.summaryItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: hsl(var(--item-color), .1);
+}
+
+.summaryItem img {
+    stroke: red;
+}
+
+
+[data-item-type='accent-1'] {
+    --item-color: var(--clr-accent-1)
+}
+
+[data-item-type='accent-2'] {
+    --item-color: var(--clr-accent-2)
+}
+
+[data-item-type='accent-3'] {
+    --item-color: var(--clr-accent-3)
+}
+
+[data-item-type='accent-4'] {
+    --item-color: var(--clr-accent-4)
+}
+
+
+.flexGroup {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+.summaryItemTitle {
+    color: hsl(var(--item-color));
+    font-weight: var(--fw-bold);
+}
+
+.summaryScore {
+    font-weight: var(--fw-black);
+    color: hsl(var(--clr-neutral-hsl-700), .6);
+
+}
+
+.summaryScore span {
+    color: var(--clr-neutral-700);
+}
